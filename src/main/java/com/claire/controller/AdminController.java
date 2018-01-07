@@ -1,6 +1,7 @@
 package com.claire.controller;
 
 import com.claire.mapping.AdminMapper;
+import com.claire.service.MonitorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,9 +18,13 @@ public class AdminController {
     @Autowired
     private AdminMapper adminMapper;
 
+    @Autowired
+    private MonitorService monitorService;
+
     @GetMapping("/")
     public String index(Model model){
         System.out.println(adminMapper.selectByPw("admin", "21232f297a57a5a743894a0e4a801fc3"));
+        model.addAttribute("freeMemory", monitorService.getFreeMemory());
         return "admin/index";
     }
 
