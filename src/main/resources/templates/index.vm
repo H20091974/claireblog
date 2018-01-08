@@ -111,9 +111,9 @@
 					<!-- single slide -->
 					<div class="item active" style="background-image: url(/img/banner1.jpeg);">
 						<div class="carousel-caption">
-							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Brandi</span>!</h2>
-							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-							<p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals</p>
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> 克莱尔之家</span>!</h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/《在霓虹国走东闯西，与秋天不期而遇》</span></h3>
+							<p data-wow-duration="1000ms" class="wow slideInRight animated"></p>
 							
 							<ul class="social-links text-center">
 								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -128,9 +128,9 @@
 					<!-- single slide -->
 					<div class="item" style="background-image: url(/img/banner2.jpeg);">
 						<div class="carousel-caption">
-							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
-							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-							<p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
+							<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> 克莱尔之家</span>!</h2>
+							<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">#我的2017#拥抱大好河山正当时</h3>
+							<p data-wow-duration="500ms" class="wow slideInRight animated"></p>
 							
 							<ul class="social-links text-center">
 								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -228,12 +228,12 @@
 				<div class="row">
 				
 					<div class="sec-title text-center">
-						<h2>Works</h2>
+						<h2>鼠鼠国的宝贝们</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 					</div>
 					
 					<div class="sec-sub-title text-center">
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+						<p>快来认识一下鼠鼠国的宝贝们。</p>
 					</div>
 					
 					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
@@ -342,21 +342,20 @@
 				<div class="row">
 		
 					<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-						<h2>Meet Our Team</h2>
+						<h2>走南闯北 那些年</h2>
 						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
 					</div>
 					
 					<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+						<p>走南闯北的那些年，去了很多地方，认识了好多人，不变的，是留下的回忆，与那些看到的曾经。</p>
 					</div>
 
 					<!-- single member -->
 					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 						<div class="member-thumb">
-							<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+							<img src="img/blog1.jpeg" alt="Team Member" class="img-responsive">
 							<figcaption class="overlay">
-								<h5>voluptatem quia voluptas </h5>
-								<p>sit aspernatur aut odit aut fugit,</p>
+								<p>想了很久不知道怎么开头，感觉离16年的总结没过多久，怎么17年就要这样子匆匆接近尾声。</p>
 								<ul class="social-links text-center">
 									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
 									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -365,55 +364,16 @@
 							</figcaption>
 						</div>
 						<h4>#我的2017#拥抱大好河山正当时</h4>
-						<span>想了很久不知道怎么开头，感觉离16年的总结没过多久。。。</span>
+						<span>2017-12-27 23:40:43</span>
 					</figure>
 					<!-- end single member -->
 					
 					<!-- single member -->
 					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="member-thumb">
-							<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+							<img src="img/blog2.jpeg" alt="Team Member" class="img-responsive">
 							<figcaption class="overlay">
-								<h5>voluptatem quia voluptas </h5>
-								<p>与越南相识，应该是在初中的某一个暑假</p>
-								<ul class="social-links text-center">
-									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								</ul>
-							</figcaption>
-						</div>
-						<h4>五天六飞，短暂的相遇 你好，越南与香港</h4>
-						<span>与越南相识，应该是在初中的某一个暑假</span>
-					</figure>
-					<!-- end single member -->
-					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-						<div class="member-thumb">
-							<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
-							<figcaption class="overlay">
-								<h5>voluptatem quia voluptas </h5>
-								<p>sit aspernatur aut odit aut fugit,</p>
-								<ul class="social-links text-center">
-									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-								</ul>
-							</figcaption>
-						</div>
-						<h4>十年闺蜜情 我和小雪的泰国行</h4>
-						<span>17年入夏，计划和姐妹来一趟撒欢儿的旅行</span>
-					</figure>
-					<!-- end single member -->
-					
-					<!-- single member -->
-					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-						<div class="member-thumb">
-							<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-							<figcaption class="overlay">
-								<h5>voluptatem quia voluptas </h5>
-								<p>sit aspernatur aut odit aut fugit,</p>
+								<p>日本，好像从来没有出现在我的清单上。一方面，我不是广大动漫迷或者剁手党中的一员...</p>
 								<ul class="social-links text-center">
 									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
 									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -422,7 +382,45 @@
 							</figcaption>
 						</div>
 						<h4>在霓虹国走东闯西，与秋天不期而遇</h4>
-						<span>日本，好像从来没有出现在我的清单上</span>
+						<span> 2017-12-07 23:58:02</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+						<div class="member-thumb">
+							<img src="img/blog3.jpeg" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5> </h5>
+								<p>与越南相识，应该是在初中的某一个暑假。那时候，从云南的一条河坐船过境，在某个不知名的城市里短暂的停留了一下午...</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>五天六飞，短暂的相遇 你好，越南与香港</h4>
+						<span> 2017-08-04 23:51:45</span>
+					</figure>
+					<!-- end single member -->
+					
+					<!-- single member -->
+					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="member-thumb">
+							<img src="img/blog4.jpeg" alt="Team Member" class="img-responsive">
+							<figcaption class="overlay">
+								<h5></h5>
+								<p>很久没有写游记了，喜欢上了洗相片，总觉得一张张美到爆的照片已经能够讲述那一刻发生的故事...</p>
+								<ul class="social-links text-center">
+									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+								</ul>
+							</figcaption>
+						</div>
+						<h4>你清澈又神秘，在贝加尔湖畔</h4>
+						<span>2017-01-03 20:48:59</span>
 					</figure>
 					<!-- end single member -->
 					
