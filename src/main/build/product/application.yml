@@ -49,6 +49,10 @@ spring:
             connection-timeout: 30000
             maximum-pool-size: 50
             minimum-idle: 5
+    mvc:
+        static-path-pattern: /**
+    resources:
+        static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:/claireblog/upload
 mybatis:
     type-aliases-package: com.claire.mapping
     type-handlers-package: org.apache.ibatis.type.LocalDateTypeHandler

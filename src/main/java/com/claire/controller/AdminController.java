@@ -26,7 +26,7 @@ public class AdminController {
         System.out.println(adminMapper.selectByPw("admin", "21232f297a57a5a743894a0e4a801fc3"));
         model.addAttribute("freeMemory", monitorService.getFreeMemory());
         model.addAttribute("pageId","index");
-        return "admin/index";
+        return "admin/ueditor";
     }
 
 
