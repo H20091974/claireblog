@@ -15,7 +15,6 @@ import java.util.Date;
 @NoArgsConstructor
 @ToString
 public class BabyInfo {
-
     private int id;
     private String name;
     private Date birthday;

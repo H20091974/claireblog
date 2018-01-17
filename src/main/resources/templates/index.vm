@@ -353,9 +353,9 @@
 					<!-- single member -->
 					<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 						<div class="member-thumb">
-							<img src="img/blog1.jpeg" alt="Team Member" class="img-responsive">
+							<img src="${article.HeadFig}" alt="Team Member" class="img-responsive">
 							<figcaption class="overlay">
-								<p>想了很久不知道怎么开头，感觉离16年的总结没过多久，怎么17年就要这样子匆匆接近尾声。</p>
+								<p>${article.Content}</p>
 								<ul class="social-links text-center">
 									<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
 									<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
@@ -363,8 +363,8 @@
 								</ul>
 							</figcaption>
 						</div>
-						<h4>#我的2017#拥抱大好河山正当时</h4>
-						<span>2017-12-27 23:40:43</span>
+						<h4>${article.Title}</h4>
+						<span>${article.PostDate}</span>
 					</figure>
 					<!-- end single member -->
 					
