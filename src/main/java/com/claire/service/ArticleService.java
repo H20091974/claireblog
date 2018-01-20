@@ -22,6 +22,8 @@ public interface ArticleService {
 	public int update(String content, int id);
 	
 	public int delete(int id);
+
+	public int add(Article article);
 	
 	public List<Article> findAllArticles();
 	

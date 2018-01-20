@@ -6,6 +6,7 @@ package com.claire.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import com.claire.util.NumParseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +36,11 @@ public class ArticleServiceImpl implements ArticleService{
 	@Override
 	public int delete(int id) {
 		return articleMapper.delete(id);
+	}
+
+	@Override
+	public int add(Article article) {
+		return articleMapper.add(article.getTitle(), NumParseUtil.parseInt(article.getAuthor(),1),article.getPostDate(),article.getHeadFig(),article.getContent(),article.getTags());
 	}
 
 	@Override
