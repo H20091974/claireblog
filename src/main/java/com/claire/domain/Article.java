@@ -1,0 +1,89 @@
+/**
+ * 
+ */
+package com.claire.domain;
+
+import java.util.Date;
+
+/**
+ * @author claire
+ *
+ */
+public class Article {
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", title=" + title + ", author=" + author + ", postDate=" + postDate + ", views="
+				+ views + ", headFig=" + headFig + ", content=" + content + ", tags=" + tags + ", summary=" + summary
+				+ "]";
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public User getAuthor() {
+		return author;
+	}
+	public void setAuthor(User author) {
+		this.author = author;
+	}
+	public Date getPostDate() {
+		return postDate;
+	}
+	public void setPostDate(Date postDate) {
+		this.postDate = postDate;
+	}
+	public int getViews() {
+		return views;
+	}
+	public void setViews(int views) {
+		this.views = views;
+	}
+	public String getHeadFig() {
+		return headFig;
+	}
+	public void setHeadFig(String headFig) {
+		this.headFig = headFig;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getTags() {
+		return tags;
+	}
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+	public String getSummary() {
+		return summary;
+	}
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
+
+
+	private int id;
+	private String title;
+	private User author;
+	private Date postDate;
+	private int views;
+	private String headFig;
+	private String content;
+	private String tags;
+	private String summary;
+	
+	
+	
+}
