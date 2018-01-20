@@ -617,7 +617,6 @@
       function article_publish () {
           var form = new FormData(document.getElementById("article"));
           form.append("content",UE.getEditor('editor').getContent());
-          alert(UE.getEditor('editor').getContent());
           $.ajax({
               url:"/admin/articlepublish",
               type:"post",

@@ -40,7 +40,7 @@ public class ArticleServiceImpl implements ArticleService{
 
 	@Override
 	public int add(Article article) {
-		return articleMapper.add(article.getTitle(), NumParseUtil.parseInt(article.getAuthor(),1),article.getPostDate(),article.getHeadFig(),article.getContent(),article.getTags());
+		return articleMapper.add(article.getTitle(), article.getAuthor(),article.getPostDate(),article.getHeadFig(),article.getContent(),article.getTags());
 	}
 
 	@Override

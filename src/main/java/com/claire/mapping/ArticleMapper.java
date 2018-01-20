@@ -23,8 +23,8 @@ import com.claire.domain.Article;
 @Repository
 @Mapper
 public interface ArticleMapper {
-	@Insert("insert into article(title, author, postDate, headFig, content, tag) "
-			+ "values(#{title}, #{author}, #{postDate}, #{headFig}, #{content}, #{tag}")
+	@Insert("insert into article(title, author, postDate, headFig, content, tags) "
+			+ "values(#{title}, #{author}, #{postDate}, #{headFig}, #{content}, #{tag})")
 	int add(@Param("title") String title, @Param("author") int authorID, 
 			@Param("postDate") Date postDate, @Param("headFig") String headFig,
 			@Param("content") String content, @Param("tag") String tag);
