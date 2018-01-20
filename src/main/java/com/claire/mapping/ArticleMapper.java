@@ -44,4 +44,11 @@ public interface ArticleMapper {
 	@Select("select * from article where author = #{uid}")
 	List<Article> findArticlesByAuthor(@Param("uid") int userId);
 	
+	//SELECT * FROM article where author=1 and postDate < (select postDate from article where id=3) limit 1
+	@Select("SELECT * FROM article where author=#{uid} and postDate < (select postDate from article where id=#{id}) limit 1")
+	Article findPreviousArticlyByAuthor(@Param("uid") int uid, @Param("id") int id);
+	
+	//SELECT * FROM article where author=1 and postDate > (select postDate from article where id=3) order by postDate desc limit 1
+	@Select("SELECT * FROM article where author=#{uid} and postDate > (select postDate from article where id=#{id}) order by postDate desc limit 1")
+	Article findNextArticlyByAuthor(@Param("uid") int uid, @Param("id") int id);
 }

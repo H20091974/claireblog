@@ -5,8 +5,6 @@ package com.claire.domain;
 
 import java.util.Date;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 /**
  * @author claire
  *
@@ -14,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 public class Article {
 	private int id;
 	private String title;
-	private String author;
+	private int author;
 	private Date postDate;
 	private int views;
 	private String headFig;
@@ -38,12 +36,12 @@ public class Article {
 	}
 
 
-	public String getAuthor() {
+	public int getAuthor() {
 		return author;
 	}
 
 
-	public void setAuthor(String author) {
+	public void setAuthor(int author) {
 		this.author = author;
 	}
 

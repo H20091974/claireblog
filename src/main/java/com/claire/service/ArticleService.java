@@ -31,4 +31,7 @@ public interface ArticleService {
 	
 	public List<Article> findArticlesByAuthor(int userId);
 	
+	public Article findPreviousArticlyByAuthor (int uid, int id);
+	
+	public Article findNextArticlyByAuthor (int uid, int id);
 }

@@ -58,4 +58,14 @@ public class ArticleServiceImpl implements ArticleService{
 		return articleMapper.findAllArticles();
 	}
 
+	@Override
+	public Article findPreviousArticlyByAuthor(int uid, int id) {
+		return articleMapper.findPreviousArticlyByAuthor(uid, id);
+	}
+
+	@Override
+	public Article findNextArticlyByAuthor(int uid, int id) {
+		return articleMapper.findNextArticlyByAuthor(uid, id);
+	}
+
 }
