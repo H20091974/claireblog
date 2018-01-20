@@ -23,6 +23,8 @@ public interface ArticleService {
 	
 	public int delete(int id);
 	
+	public List<Article> findAllArticles();
+	
 	public Article findArticleById(int id);
 	
 	public List<Article> findArticlesByAuthor(int userId);
