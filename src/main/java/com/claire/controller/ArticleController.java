@@ -30,8 +30,9 @@ public class ArticleController {
 	
     @GetMapping("/articleList")
     public String showAllArticle(Model model){
-    	System.out.println(articleMapper.findAllArticles().toString());
-    	model.addAttribute("articles", articleService.findAllArticles());
+//    	System.out.println(articleMapper.findAllArticles().toString());
+    	List<Article> articleList = articleService.findAllArticles();
+    	model.addAttribute("articles", articleList);
         return "articleList";
     }
     
@@ -41,14 +42,14 @@ public class ArticleController {
     	Article article = articleService.findArticleById(id);
     	model.addAttribute("article", article);
     	
-    	String userProfile = userService.getUserProfile(article.getAuthor());
+    	String userProfile = userService.getUserProfile(Integer.parseInt(article.getAuthor()));
 //    	System.out.println(userProfile);
     	model.addAttribute("userprofile", userProfile);
     	
-    	Article previous = articleService.findPreviousArticlyByAuthor(article.getAuthor(), article.getId());
+    	Article previous = articleService.findPreviousArticlyByAuthor(Integer.parseInt(article.getAuthor()), article.getId());
     	model.addAttribute("previous", previous);
     	
-    	Article next = articleService.findNextArticlyByAuthor(article.getAuthor(), article.getId());
+    	Article next = articleService.findNextArticlyByAuthor(Integer.parseInt(article.getAuthor()), article.getId());
     	model.addAttribute("next", next);
     	
         return "article";

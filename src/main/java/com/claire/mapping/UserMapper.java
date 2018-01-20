@@ -11,4 +11,7 @@ public interface UserMapper {
 
 	@Select("select profile from user where id = #{uid}")
 	String findUserProfileById(@Param("uid") int userId);
+	
+	@Select("select nickname from user where id = #{uid}")
+	String findNicknameById(@Param("uid") int userId);
 }
