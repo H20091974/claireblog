@@ -11,8 +11,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.claire.domain.Article;
+import com.claire.domain.User;
 import com.claire.mapping.ArticleMapper;
 import com.claire.service.ArticleService;
+import com.claire.service.UserService;
 
 /**
  * Claire
@@ -23,6 +25,8 @@ public class ArticleController {
 	private ArticleMapper articleMapper;
 	@Autowired
 	private ArticleService articleService;
+	@Autowired
+	private UserService userService;
 	
     @GetMapping("/articleList")
     public String showAllArticle(Model model){
@@ -31,12 +35,24 @@ public class ArticleController {
         return "articleList";
     }
     
-    private String formatDate(Date date){
-    	SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd"); 
-    	String strDate = formatter.format(date); 
-    	return strDate;
+    @GetMapping("/article")
+    public String showAllArticleByID(Model model, Integer id){
+//    	System.out.println(articleMapper.findArticleById(id).toString());
+    	Article article = articleService.findArticleById(id);
+    	model.addAttribute("article", article);
+    	
+    	String userProfile = userService.getUserProfile(article.getAuthor());
+//    	System.out.println(userProfile);
+    	model.addAttribute("userprofile", userProfile);
+    	
+    	Article previous = articleService.findPreviousArticlyByAuthor(article.getAuthor(), article.getId());
+    	model.addAttribute("previous", previous);
+    	
+    	Article next = articleService.findNextArticlyByAuthor(article.getAuthor(), article.getId());
+    	model.addAttribute("next", next);
+    	
+        return "article";
     }
-    
     
     
 
