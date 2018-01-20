@@ -12,7 +12,7 @@ import java.util.Date;
 public class Article {
 	private int id;
 	private String title;
-	private int author;
+	private String author;
 	private Date postDate;
 	private int views;
 	private String headFig;
@@ -20,61 +20,49 @@ public class Article {
 		return id;
 	}
 
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 
 	public String getTitle() {
 		return title;
 	}
 
-
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-
-	public int getAuthor() {
+	public String getAuthor() {
 		return author;
 	}
-
-
-	public void setAuthor(int author) {
+	
+	public void setAuthor(String author) {
 		this.author = author;
 	}
-
 
 	public int getViews() {
 		return views;
 	}
 
-
 	public void setViews(int views) {
 		this.views = views;
 	}
-
 
 	public String getHeadFig() {
 		return headFig;
 	}
 
-
 	public void setHeadFig(String headFig) {
 		this.headFig = headFig;
 	}
-
 
 	public String getContent() {
 		return content;
 	}
 
-
 	public void setContent(String content) {
 		this.content = content;
 	}
-
 
 	public String getTags() {
 		return tags;
