@@ -35,7 +35,7 @@ public interface ArticleMapper {
 	@Delete("delete from article where id = #{id}")
 	int delete(int id);
 	
-	@Select("select title, user.nickname as author, postDate, views, headFig, summary, tags from article,user where article.author=user.id")
+	@Select("select article.id, title, user.nickname as author, postDate, views, headFig, summary, tags from article,user where article.author=user.id")
 	List<Article> findAllArticles();
 	
 	@Select("select * from article where id = #{id}")
