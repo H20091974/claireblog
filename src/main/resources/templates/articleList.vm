@@ -1,375 +1,231 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-    	<!-- meta charec set -->
-        <meta charset="utf-8">
-		<!-- Always force latest IE rendering engine or request Chrome Frame -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<!-- Page Title -->
-        <title>Free Bootstrap3 based HTML5 Templates</title>		
-		<!-- Meta Description -->
-        <meta name="description" content="Blue One Page Creative HTML5 Template">
-        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
-        <meta name="author" content="Muhammad Morshed">
-		<!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- Google Font -->
-		<link rel="stylesheet" href="articleList/css/article.css" />
-		<link href='css/fonts.googleapis.family_Open_Sans_400_300_600_700_800.css' rel='stylesheet' type='text/css'>
 
-		<!-- CSS
-		================================================== -->
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- animate -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="articleList/css/main.css">
-		<!-- media-queries -->
-        <link rel="stylesheet" href="css/media-queries.css">
-        
-        
-
-		<!-- Modernizer Script for old Browsers -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
-
-    </head>
+	<link rel="stylesheet" href="articleList/css/main-default.css" />
 	
-    <body id="body">
+	#parse("base.vm")  
 	
-		<!-- preloader -->
-		<div id="preloader">
-			<img src="img/preloader.gif" alt="Preloader">
+		<div class="container b-header__box b-relative">
+			<div class="b-header-r b-right b-header-r--icon"></div>
 		</div>
-		<!-- end preloader -->
-
-        <!-- 
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar-fixed-top navbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
-                    </button>
-					<!-- /responsive nav button -->
-					
-					<!-- logo -->
-                    <a class="navbar-brand atitle" href="#body">
-						<h1 id="logo" style="margin-top:-4px">
-							<img src="img/logo.png" alt="Brandi">
-						</h1>
-					</a>
-					<!-- /logo -->
-                </div>
-
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a class="atitle" href="#body">Home</a></li>
-                        <li><a class="atitle" href="#features">Features</a></li>
-                        <li><a class="atitle" href="#works">Work</a></li>
-                        <li><a class="atitle" href="#team">Team</a></li>
-                        <li><a class="atitle" href="http://google.com">Contact</a></li>
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-				
-            </div>
-        </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-		<!-- Wrapper -->
-		<div id="wrapper" style:"background-color:>
+	
+	<div id="wrapper" style:"background-color:>
 			<!-- Main -->
-					<div id="main">
-					
-					    #foreach(${article} in ${articles})
-					
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="/article?id=${article.id}">${article.title}</a></h2>
-										
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-11-01">${article.postDate}</time>
-										<a href="#" class="author"><span class="name">${article.author}</span><img src="articleList/images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-								<a href="#" class="image featured"><img src="${article.headFig}" alt="" /></a>
-								<p>${article.summary}</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="/article?id=${article.id}" class="button big">Continue Reading</a></li>
-									</ul>
-									<ul class="stats">
-										<li><a href="#" class="icon fa-heart">28</a></li>
-										<li><a href="#" class="icon fa-comment">${article.views}</a></li>
-									</ul>
-								</footer>
-							</article>
-                        #end 
-						<!-- Post -->
-
-						<!-- Pagination -->
-							<ul class="actions pagination">
-								<li><a href="" class="button previous">Previous Page</a></li>
-								<li><a href="#" class="button next">Next Page</a></li>
-							</ul>
-
-					</div>
-
-				<!-- Sidebar -->
-					<section id="sidebar">
-
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="articleList/images/logo.jpg" alt="" /></a>
-								<header>
-									<h2>Future Imperfect</h2>
-									<p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-								</header>
-							</section>
-
-						<!-- Mini Posts -->
-							<section>
-								<div class="mini-posts">
-
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="#">Vitae sed condimentum</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-												<a href="#" class="author"><img src="articleList/images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic04.jpg" alt="" /></a>
-										</article>
-
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="#">Rutrum neque accumsan</a></h3>
-												<time class="published" datetime="2015-10-19">October 19, 2015</time>
-												<a href="#" class="author"><img src="articleList/images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic05.jpg" alt="" /></a>
-										</article>
-
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="#">Odio congue mattis</a></h3>
-												<time class="published" datetime="2015-10-18">October 18, 2015</time>
-												<a href="#" class="author"><img src="articleList/images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic06.jpg" alt="" /></a>
-										</article>
-
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="#">Enim nisl veroeros</a></h3>
-												<time class="published" datetime="2015-10-17">October 17, 2015</time>
-												<a href="#" class="author"><img src="articleList/images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic07.jpg" alt="" /></a>
-										</article>
-
-								</div>
-							</section>
-
-						<!-- Posts List -->
-							<section>
-								<ul class="posts">
-									<li>
-										<article>
-											<header>
-												<h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic08.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
-												<time class="published" datetime="2015-10-15">October 15, 2015</time>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic09.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
-												<time class="published" datetime="2015-10-10">October 10, 2015</time>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic10.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="#">Magna enim accumsan tortor cursus ultricies</a></h3>
-												<time class="published" datetime="2015-10-08">October 8, 2015</time>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic11.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="#">Congue ullam corper lorem ipsum dolor</a></h3>
-												<time class="published" datetime="2015-10-06">October 7, 2015</time>
-											</header>
-											<a href="#" class="image"><img src="articleList/images/pic12.jpg" alt="" /></a>
-										</article>
-									</li>
-								</ul>
-							</section>
-
-						<!-- About -->
-							<section class="blurb">
-								<h2>About</h2>
-								<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</section>
-
-						<!-- Footer -->
-							<section id="footer">
-								<ul class="icons">
-									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-								
-							</section>
-
-					</section>
-
-			</div>
-		
-		<script src="articleList/js/jquery.min.js"></script>
-			<script src="articleList/js/skel.min.js"></script>
-			<script src="articleList/js/util.js"></script>
-			<!--[if lte IE 8]><script src="articleList/js/ie/respond.min.js"></script><![endif]-->
-			<script src="articleList/js/main.js"></script>
-		
+	<div id="main">	
+			<div class="l-inner-page-container">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-9 col-md-push-3">
+		                    <div class="b-blog-listing__block">
+		                        <div class="b-blog-listing__block-top">
+		                            <div class=" view view-sixth">
+		                                <img data-retina="" src="articleList/images/blog/blog_listing.jpg" alt="">
+		   
+		                            </div>
+		                        </div>
+		                        <div class="b-infoblock-with-icon b-blog-listing__infoblock">
+		                            <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate hidden-xs">
+		                                <i class="fa fa-pencil"></i>
+		                            </a>
+		                            <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+		                                <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-l b-title-b-hr f-title-b-hr">
+		                                    Mauris ac risus neque, ut pulvinar risus
+		                                </a>
+		                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
+		                                    By <a href="#" class="f-more">Stephen Brock</a> In <a href="#" class="f-more">Lifestyle</a>, <a href="#" class="f-more">Photography</a> Posted May 24th, 2013
+		                                    <a href="#" class="f-more b-blog-listing__additional-text f-primary"><i class="fa fa-comment"></i>12 Comments</a>
+		                                </div>
+		                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text c-primary b-blog-listing__text">
+		                                    Pendisse blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis.
+		                                </div>
+		                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+		                                    <a href="#" class="f-more f-primary-b">Read more</a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="b-blog-listing__block">
+		                        <div class="b-video-player b-blog-listing__block-top">
+		                            <iframe src="http://player.vimeo.com/video/81801013?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="870" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		                        </div>
+		                        <div class="b-infoblock-with-icon b-blog-listing__infoblock">
+		                            <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate hidden-xs">
+		                                <i class="fa fa-video-camera"></i>
+		                            </a>
+		                            <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
+		                                <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-l b-title-b-hr f-title-b-hr">
+		                                    This Is Vimeo video post
+		                                </a>
+		                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
+		                                    By <a href="#" class="f-more">Stephen Brock</a> In <a href="#" class="f-more">Lifestyle</a>, <a href="#" class="f-more">Photography</a> Posted May 24th, 2013
+		                                    <a href="#" class="f-more b-blog-listing__additional-text f-primary"><i class="fa fa-comment"></i>12 Comments</a>
+		                                </div>
+		                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text c-primary b-blog-listing__text">
+		                                    Pendisse blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis.
+		                                </div>
+		                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
+		                                    <a href="#" class="f-more f-primary-b">Read more</a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		              
+		                    <div class="b-pagination f-pagination">
+		    <ul>
+		        <li><a href="#">First</a></li>
+		        <li><a class="prev" href="#"><i class="fa fa-angle-left"></i></a></li>
+		        <li class="is-active-pagination"><a href="#">1</a></li>
+		        <li><a href="#">2</a></li>
+		        <li><a href="#">3</a></li>
+		        <li><a class="next" href="#"><i class="fa fa-angle-right"></i></a></li>
+		        <li><a href="#">Last</a></li>
+		    </ul>
 		</div>
-		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
-
-		<!-- Essential jQuery Plugins
-		================================================== -->
-		<!-- Main jQuery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Single Page Nav -->
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- jquery.mixitup.min -->
-        <script src="js/jquery.mixitup.min.js"></script>
-		<!-- jquery.parallax -->
-        <script src="js/jquery.parallax-1.1.3.js"></script>
-		<!-- jquery.countTo -->
-        <script src="js/jquery-countTo.js"></script>
-		<!-- jquery.appear -->
-        <script src="js/jquery.appear.js"></script>
-		<!-- Contact form validation -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-		<!-- jquery easing -->
-        <script src="js/jquery.easing.min.js"></script>
-		<!-- jquery easing -->
-        <script src="js/wow.min.js"></script>
-		<script>
-			var wow = new WOW ({
-				boxClass:     'wow',      // animated element css class (default is wow)
-				animateClass: 'animated', // animation css class (default is animated)
-				offset:       120,          // distance to the element when triggering the animation (default is 0)
-				mobile:       false,       // trigger animations on mobile devices (default is true)
-				live:         true        // act on asynchronously loaded content (default is true)
-			  }
-			);
-			wow.init();
-		</script> 
-		<!-- Custom Functions -->
-        <script src="js/custom.js"></script>
+		                </div>
+		                <div class="visible-xs-block visible-sm-block b-hr"></div>
+		                <div class="col-md-3 col-md-pull-9">
+		                    <div class="row">
+		    <div class="col-md-12">
+		        <div class="b-form-row b-input-search">
+		            <input class="form-control" type="text" placeholder="Enter your keywords"/>
+		            <span class="b-btn b-btn-search f-btn-search fa fa-search fa-2x"></span>
+		        </div>
+		    </div>
+		</div>
+		<div class="row b-col-default-indent">
+		    <div class="col-md-12">
+		        <div class="b-categories-filter">
+		            <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">blog categories</h4>
+		            <ul>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Web Design</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Smart Phone</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Latop</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Apple Store</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Wordpress Theme</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Web Design</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Sport</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">12</span>
+				    </li>
+				    <li>
+				        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Fashion</a>
+				        <span class="b-categories-filter_count f-categories-filter_count">23</span>
+				    </li>
+				</ul>
+		        </div>
+		    </div>
+		    <div class="col-md-12">
+		        <h4 class="f-primary-b b-h4-special  f-h4-special--gray f-h4-special">popular postes</h4>
 		
-		<script type="text/javascript">
-			$(function(){
-				/* ========================================================================= */
-				/*	Contact Form
-				/* ========================================================================= */
-				
-				$('#contact-form').validate({
-					rules: {
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						message: {
-							required: true
-						}
-					},
-					messages: {
-						name: {
-							required: "come on, you have a name don't you?",
-							minlength: "your name must consist of at least 2 characters"
-						},
-						email: {
-							required: "no email, no message"
-						},
-						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
-						}
-					},
-					submitHandler: function(form) {
-						$(form).ajaxSubmit({
-							type:"POST",
-							data: $(form).serialize(),
-							url:"process.php",
-							success: function() {
-								$('#contact-form :input').attr('disabled', 'disabled');
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$(this).find(':input').attr('disabled', 'disabled');
-									$(this).find('label').css('cursor','default');
-									$('#success').fadeIn();
-								});
-							},
-							error: function() {
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$('#error').fadeIn();
-								});
-							}
-						});
-					}
-				});
-			});
-		</script>
-    </body>
+		        <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+		            <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+					    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+					        <div class="b-blog-short-post__item_img">
+					            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_1.jpg" alt=""/></a>
+					        </div>
+					        <div class="b-remaining">
+					            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+					                <a href="#">Phasellus id mattis dolorunc et erat hendrerit, tincidunt</a>
+					            </div>
+					            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+					                10, January, 2014
+					            </div>
+					        </div>
+					    </div>
+					    
+					    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+					        <div class="b-blog-short-post__item_img">
+					            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_2.jpg" alt=""/></a>
+					        </div>
+					        <div class="b-remaining">
+					            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+					                <a href="#">Vel eleifend id ullamcorper eu velit</a>
+					            </div>
+					            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+					                14, January, 2014
+					            </div>
+					        </div>
+		    			</div>
+					    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+					        <div class="b-blog-short-post__item_img">
+					            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_2.jpg" alt=""/></a>
+					        </div>
+					        <div class="b-remaining">
+					            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+					                <a href="#">Lorem ipsum dolor sit amet purus vitae magna rhoncus</a>
+					            </div>
+					            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+					                10, January, 2014
+					            </div>
+					        </div>
+					    </div>
+					    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+					        <div class="b-blog-short-post__item_img">
+					            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_3.jpg" alt=""/></a>
+					        </div>
+					        <div class="b-remaining">
+					            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+					                <a href="#">Fusce vitae dui sit amet lacus rutrum convallis</a>
+					            </div>
+					            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+					                10, January, 2014
+					            </div>
+					        </div>
+					    </div>
+					    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b @@hidden">
+					        <div class="b-blog-short-post__item_img">
+					            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_1.jpg" alt=""/></a>
+					        </div>
+					        <div class="b-remaining">
+					            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+					                <a href="#">Fusce vitae dui sit amet lacus rutrum convallis</a>
+					            </div>
+					            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+					                10, January, 2014
+					            </div>
+					        </div>
+					    </div>
+					</div>
+		        </div>
+		    </div>
+						    <div class="col-md-12">
+						        <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">tags cloud</h4>
+						        <div>
+								    <a class="f-tag b-tag" href="#">Dress</a>
+								    <a class="f-tag b-tag" href="#">Mini</a>
+								    <a class="f-tag b-tag" href="#">Skate animal</a>
+								    <a class="f-tag b-tag" href="#">Lorem ipsum</a>
+								    <a class="f-tag b-tag" href="#">literature</a>
+								    <a class="f-tag b-tag" href="#">Baroque</a>
+								    <a class="f-tag b-tag" href="#">Dress</a>
+								    <a class="f-tag b-tag" href="#">Mini</a>
+								    <a class="f-tag b-tag" href="#">Skate animal</a>
+								    <a class="f-tag b-tag" href="#">Lorem ipsum</a>
+								    <a class="f-tag b-tag" href="#">literature</a>
+								    <a class="f-tag b-tag" href="#">Baroque</a>
+								</div>
+						    </div>
+						</div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+      </div> 
 </html>
