@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="articleList/css/main-default.css" />
 
-#parse("base.vm")
+#parse("module/base.vm")
 
 <div class="container b-header__box b-relative">
     <div class="b-header-r b-right b-header-r--icon"></div>

@@ -289,7 +289,7 @@
 		<script src="articleList/js/jquery.min.js"></script>
 			<script src="articleList/js/skel.min.js"></script>
 			<script src="articleList/js/util.js"></script>
-			<!--[if lte IE 8]><script src="articleList/js/ie/respond.min.js"></script><![endif]-->
+			<!--[if lte IE 8]><script src="user/js/ie/respond.min.js"></script><![endif]-->
 			<script src="articleList/js/main.js"></script>
 		
 		</div>

@@ -19,15 +19,15 @@ import java.util.Date;
  * Created by zhongnanhuang209074 on 2018/1/27.
  */
 @Controller
-//@RequestMapping("/user/article")
+@RequestMapping("/user")
 public class UserArticleManagerController {
 
     @Autowired
     private ArticleService articleService;
 
-    @RequestMapping("/user")
+    @RequestMapping("/articles")
     public String publish(HttpServletRequest request){
-        return  "user/index";
+        return  "/user/articles";
     }
 
 

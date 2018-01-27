@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	#parse("base.vm")  
+	#parse("module/base.vm")
 	
 	<link rel="stylesheet" href="article/css/style.css">
 	

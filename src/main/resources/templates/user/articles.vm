@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="articleList/css/main-default.css" />
+<link rel="stylesheet" href="/user/css/main-default.css" />
 
-#parse("base.vm")
+#parse("/module/base.vm")
 
 <div class="container b-header__box b-relative">
     <div class="b-header-r b-right b-header-r--icon"></div>
@@ -18,7 +18,7 @@
                     <div class="b-blog-listing__block">
                         <div class="b-blog-listing__block-top">
                             <div class=" view view-sixth">
-                                <img data-retina="" src="articleList/images/blog/blog_listing.jpg" alt="">
+                                <img data-retina="" src="/user/images/blog/blog_listing.jpg" alt="">
 
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                                 <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
                                     <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                                         <div class="b-blog-short-post__item_img">
-                                            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_1.jpg" alt=""/></a>
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_1.jpg" alt=""/></a>
                                         </div>
                                         <div class="b-remaining">
                                             <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -152,7 +152,7 @@
 
                                     <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                                         <div class="b-blog-short-post__item_img">
-                                            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_2.jpg" alt=""/></a>
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_2.jpg" alt=""/></a>
                                         </div>
                                         <div class="b-remaining">
                                             <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -165,7 +165,7 @@
                                     </div>
                                     <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                                         <div class="b-blog-short-post__item_img">
-                                            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_2.jpg" alt=""/></a>
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_2.jpg" alt=""/></a>
                                         </div>
                                         <div class="b-remaining">
                                             <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -178,7 +178,7 @@
                                     </div>
                                     <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                                         <div class="b-blog-short-post__item_img">
-                                            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_3.jpg" alt=""/></a>
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_3.jpg" alt=""/></a>
                                         </div>
                                         <div class="b-remaining">
                                             <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b @@hidden">
                                         <div class="b-blog-short-post__item_img">
-                                            <a href="#"><img data-retina src="articleList/images/gallery/sm/gallery_1.jpg" alt=""/></a>
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_1.jpg" alt=""/></a>
                                         </div>
                                         <div class="b-remaining">
                                             <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
