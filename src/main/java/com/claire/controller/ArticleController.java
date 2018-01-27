@@ -37,7 +37,7 @@ public class ArticleController {
     }
     
     @GetMapping("/article")
-    public String showAllArticleByID(Model model, Integer id){
+    public String showAllArticleByID(Model model, int id){
 //    	System.out.println(articleMapper.findArticleById(id).toString());
     	Article article = articleService.findArticleById(id);
     	model.addAttribute("article", article);
