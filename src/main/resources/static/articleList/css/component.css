@@ -1,0 +1,40 @@
+/*
+
+*/
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Button--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+a.button{cursor: pointer;color: #ffffff;line-height: 14px;font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;	background: #3F3F3F;border:1px solid #ffffff; -webkit-border-radius: 4px;-moz-border-radius: 4px;-khtml-border-radius: 4px;border-radius: 4px;}
+a.button {	display: inline-block;	text-decoration: none;	padding: 6px 12px 6px 12px;}
+a.button:hover{}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Pagination----------------------------- */
+/* ---------------------------------------------------------------------------- */
+#pagination{margin: 30px auto;padding: 0;list-style: none;width: 180px;}
+#pagination li {float: left;margin-right: 10px;}
+#pagination li a {display: block;	text-decoration: none; color: #717171;font: bold 11px Arial, sans-serif;padding: 5px 8px;
+	-webkit-border-radius: 3px;	-moz-border-radius: 3px;	border-radius: 3px;	background: #4D4D4D;}
+#pagination li a.current, #pagination li a:hover {color: #ffffff;	opacity: 0.7;}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Article-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+article{margin-bottom: 30px;}
+article:after, article:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+article h2{font-size:30px; line-height:45px; font-weight: bold;text-transform: uppercase;}
+article .line{background: #4D4D4D; height: 5px; width: 100px; margin: 10px auto;}
+article .info{font-style:italic;}
+
+.page-home article{background: #ffffff;}
+.page-home article .art-category{background: #111111;padding: 5px 30px;display: inline-block;color: #ffffff;margin-top:10px;}
+.page-home article .art-content{padding: 20px 60px; text-align: center;}
+.page-home article p{margin: 20px 0px;}
+.page-home article img{height: 350px;}
+.page-home article a.more{text-transform: uppercase; padding-top: 30px; color: #4D4D4D; font-weight: bold;}
+.page-home article a.more:hover{text-decoration: underline;}
+
+
+

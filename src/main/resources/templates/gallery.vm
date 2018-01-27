@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<body>
+<!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="gallery/css/style.css">
+    <link rel="stylesheet" href="gallery/css/lightbox.css">
+    
+#parse("module/base.vm")
+	<div class="header">
+		<div id='cssmenu' >
+			<ul>
+			   <li class="active"><a href='index.html'><span>SimplePix</span></a></li>
+			  
+			   <li><a href='#'><span>Gallery</span></a></li>
+			   <li><a href='single.html'><span>About</span></a></li>
+			  
+			</ul>
+		</div>
+	</div>
+<div id="page-content" class="index-page">
+		<div id="container">
+			<!-- These are our grid blocks -->
+			
+			<div class="item">
+				<a class="example-image-link" href="gallery/gallery/images/27.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/27.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item" >
+						
+					<a href="single.html" style="color:#333">大王</a></h3>
+					<div class="time"> Claire</div>
+					<p class="info">大王是最帅的宝宝，擅长做蛋炒饭。</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/28.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/28.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Sun</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/29.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/29.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">The Eiffel Tower</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/30.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/30.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Water drops</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/01.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/01.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Agfa</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/02.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/02.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Auto</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</p>
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/03.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/03.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Bald eagle</a></h3>
+					<span class="time">SEPTEMBER 30TH</span>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</p>
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/04.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/04.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Black swan</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit. Vestibulum e risu.</p>
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/05.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/05.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Book shelf</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risu.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/06.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/06.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Camera</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risu.Aenean feugiat in ante et blandit. Vestibulum e risu.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/07.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/07.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Camera</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risu.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/08.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/08.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Vintage camera</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/09.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/09.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Coffee</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/10.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Cookies</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/12.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">DJ</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit. Vestibulum e risu.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/11.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Cubes</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit. Vestibulum e risu.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/13.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/13.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Doors</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/14.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/14.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Matchbox</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/15.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/15.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Freiburg</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/16.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/16.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Henna</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. nte et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/17.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/17.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Home office</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/18.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/18.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">iPad</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean fenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/19.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/19.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Matchbox</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac i, Vestibulum e risu. Aenean feugiat in ante et blandit.Vestibulum e risu. Aenean feugiat in ante et blandit.Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/20.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/20.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Lynx</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/21.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/21.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Mac</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/22.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/22.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Notebook</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/23.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/23.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Thoughts</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/24.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/24.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Office</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+			<div class="item">
+				<a class="example-image-link" href="gallery/images/26.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="gallery/images/26.jpg" alt=""/></a>
+				<div class="content-item">
+					<h3 class="title-item"><a href="single.html">Portrait</a></h3>
+					<div class="time"> SEPTEMBER 30TH</div>
+					<p class="info">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.Aenean feugiat in ante et blandit, Vestibulum e risu. Aenean feugiat in ante et blandit.</p>
+					
+				</div>
+				<div class="bottom-item">
+					<a href="#" class="btn btn-share share"><i class="fa fa-share-alt"></i> Share</a>
+					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
+					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
+					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery Pinterest -->
+    <script type="text/javascript" src="gallery/js/jquery.pinto.js"></script>
+    <script type="text/javascript" src="gallery/js/main.js"></script>
+	
+	<!-- Light Box -->
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
+	
