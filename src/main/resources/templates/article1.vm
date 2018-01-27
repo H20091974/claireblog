@@ -1,8 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
+	
 	#parse("base.vm")  
 	
+	
+	
+	<!-- Theme style  -->
 	<link rel="stylesheet" href="article/css/style.css">
 	
+	
+	
+	</head>
 	<body class="single">
 		
 	<div class="fh5co-loader"></div>
@@ -68,3 +76,5 @@
 	</div>
 
 	</body>
+</html>
+
