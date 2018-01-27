@@ -741,8 +741,7 @@ body .b-hidden {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #e26228;
-  border-bottom: 2px solid #d05a25;
+
   color: #fff;
   font-weight: 700;
   display: inline-block;
