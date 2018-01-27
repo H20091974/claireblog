@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>文章发布</title>
+
+    #include("/module/admin_head_link.vm")
+
+  </head>
+  <body>
+
+  <!-- container section start -->
+  <section id="container" class="">
+      <!--header start-->
+      #include("/module/admin_header.vm")
+      <!--header end-->
+
+      <!--sidebar start-->
+      #parse("/module/admin_sidebar.vm")
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+		  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-file-text-o"></i> Form elements</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="icon_document_alt"></i>Forms</li>
+						<li><i class="fa fa-file-text-o"></i>Form elements</li>
+					</ol>
+				</div>
+			</div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Form Elements
+                          </header>
+                          <div class="panel-body">
+                              <form class="form-horizontal" enctype="multipart/form-data" id="article" method="post">
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">标题</label>
+
+                                      <div class="col-sm-10">
+                                          <input  name="title" type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">文章标签</label>
+
+                                      <div class="col-sm-10">
+
+                                          <input name="tagsinput" id="tagsinput" class="tagsinput"
+                                                 value="文章标签"/>
+
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">封面图片</label>
+                                      <div class="col-sm-10">
+                                          <input type="file" name="headFig" id="headFig">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-sm-2 control-label">文章内容</label>
+
+                                      <div class="col-sm-10">
+                                          <div>
+                                              <script id="editor" type="text/plain"
+                                                      style="width:100%;height:500px;"></script>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <label class="col-lg-2 control-label"></label>
+                                      <div class="col-lg-10">
+                                          <button id="articlepublish" type="submit" class="btn btn-primary" onclick="article_publish()">保存</button>
+                                      </div>
+
+                                  </div>
+                              </form>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+              <!-- page end-->
+          </section>
+      </section>
+      <!--main content end-->
+  </section>
+  <!-- container section end -->
+      #include("/module/admin_foot_link.vm")
+  
+
+  </body>
+</html>

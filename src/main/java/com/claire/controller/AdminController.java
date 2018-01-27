@@ -39,13 +39,39 @@ public class AdminController {
     public String index(Model model){
 
         model.addAttribute("freeMemory", monitorService.getFreeMemory());
-        model.addAttribute("pageId","index");
-        return "admin/article_publish";
+        model.addAttribute("sidebar","index");
+        return "admin/index";
     }
 
-    @RequestMapping("/articlepublish")
+    @RequestMapping("/login")
+    public String login(HttpServletRequest request){
+
+        return "success";
+    }
+
+    @RequestMapping("/register")
+    public String register(HttpServletRequest request){
+        return "success";
+    }
+
+    @RequestMapping("/article/publish")
+    public String article_publish(Model model){
+
+        model.addAttribute("sidbar","article");
+        model.addAttribute("sub","publish");
+        return "admin/article/publish";
+
+    }
+
+
+    /**
+     * 保存文章
+     * @param request
+     * @return
+     */
+    @RequestMapping("/article/save")
     @ResponseBody
-    public String article_publish(HttpServletRequest request){
+    public String article_save(HttpServletRequest request){
 
         try {
             MultipartHttpServletRequest params = ((MultipartHttpServletRequest) request);
@@ -55,10 +81,6 @@ public class AdminController {
             String content = params.getParameter("content");
 
             String headFigPath = "log/" + file.getOriginalFilename();
-
-
-            System.out.println(title);
-            System.out.println(content);
 
             if (StringUtils.isBlank(title) || StringUtils.isBlank(content)) {
                 return "title or content is empty.";
@@ -90,4 +112,11 @@ public class AdminController {
         }
         return "upload successful";
     }
+
+    @RequestMapping("/article/list")
+    public String article_list(Model model){
+
+        return "admin/article/list";
+    }
+
 }
