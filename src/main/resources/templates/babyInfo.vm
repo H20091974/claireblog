@@ -20,9 +20,7 @@
 							<div class="logo visible-xs text-center">
 								<img src="" class="img-responsive" alt=""></a>
 							</div>
-							<div class="header-text-inner">
-								<h1>阿呆
-							</h1>
+							
 								
 							</div>
 						</div><!-- /header-text -->
@@ -37,20 +35,29 @@
 								<div class="contact-info">
 									<!-- Show Info Button -->
 									<a href="#" class="show-info-link"><i class="fa fa-info"></i> Show info</a>
+									
 									<div id="map" style="height: 550px;"></div>
+									
 									<address class="contact-info-wrapper pd-exlarge-sm pd-large-xs">
+										<ul class="list-unstyled" style="color: #FFD700">
+											
+												<h1 >阿呆
+												</h1>
+														
+										</ul>
 										<ul class="list-unstyled">
-											<!-- Address -->
+											
 											<li class="contact-group">
 											  <span class="adr-heading">我的朋友</span>
 											  <span class="adr-info">兔兔</span>
 											</li>
-											<!-- Email -->
+											
 											<li class="contact-group">
 											  <span class="adr-heading">婚姻状况</span>
 											  <span class="adr-info">单身</span>
 											</li>
 										</ul>
+										
 										<ul class="list-unstyled">
 											<!-- Phone -->
 											<li class="contact-group">
@@ -62,7 +69,19 @@
 											  <span class="adr-heading">格言</span>
 											  <span class="adr-info">放荡不羁爱自由</span>
 											</li>
-										</ul>                  
+										</ul>    
+										<ul class="list-unstyled">
+											<!-- Phone -->
+											<li class="contact-group">
+											  <span class="adr-heading">生日</span>
+											  <span class="adr-info">2018/7/1</span>
+											</li>
+											<!-- Mobile -->
+											<li class="contact-group">
+											  <span class="adr-heading">格言</span>
+											  <span class="adr-info">放荡不羁爱自由</span>
+											</li>
+										</ul>                
 										
 									</address>
 								</div>
