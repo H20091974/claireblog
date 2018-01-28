@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+#parse("/module/base.vm")
+<link href="/user/css/demo.css" rel="stylesheet" />
+<link rel="stylesheet" href="/user/css/main-default.css" />
+<link href="/user/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+<link href="/user/css/demo.css" rel="stylesheet" />
+
+<div class="container b-header__box b-relative">
+    <div class="b-header-r b-right b-header-r--icon"></div>
+</div>
+
+<div id="wrapper">
+<!-- Main -->
+<div id="main">
+    <div class="l-inner-page-container">
+        <div class="container " >
+            <div class="row ">
+                <div class="col-md-9 col-md-push-3">
+                    <div class="container" style="width:970px">
+        				<div class="row" >
+        				<div class="col-sm-11" >
+
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+                <div class="card wizard-card" data-color="green" id="wizard">
+                <form action="" method="">
+                <!--        You can switch ' data-color="green" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                    	<div class="wizard-header">
+                        	<h3>
+                        	   <b>宝宝</b> 的信息 <br>
+                        	   <small>请填写宝宝的信息吧.</small>
+                        	</h3>
+                    	</div>
+						<div class="wizard-navigation">
+							<ul>
+								<li><a href="#about" data-toggle="tab">基础信息</a></li>
+	                            <li><a href="#location" data-toggle="tab">出生信息</a></li>
+	                            <li><a href="#type" data-toggle="tab">性别</a></li>
+	                            <li><a href="#facilities" data-toggle="tab">兴趣和爱好</a></li>
+	                            <li><a href="#description" data-toggle="tab">自我介绍</a></li>
+	                        </ul>
+						</div>
+
+                        <div class="tab-content">
+                        	<div class="tab-pane" id="about">
+                              <div class="row">
+                                  <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
+                                  <div class="col-sm-4 col-sm-offset-1">
+                                     <div class="picture-container">
+                                          <div class="picture">
+                                              <img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
+                                              <input type="file" id="wizard-picture">
+                                          </div>
+                                          <h6>Choose Picture</h6>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-group">
+                                        <label>姓 <small>(*)</small></label>
+                                        <input name="firstname" type="text" class="form-control" placeholder="Andrew...">
+                                      </div>
+                                      <div class="form-group">
+                                        <label>名 <small>(*)</small></label>
+                                        <input name="lastname" type="text" class="form-control" placeholder="Smith...">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-10 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label>邮箱 <small>(*)</small></label>
+                                          <input name="email" type="email" class="form-control" placeholder="andrew@creative-tim.com">
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="location">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                    <h4 class="info-text"> Let's start with the basic details</h4>
+                                  </div>
+                                  <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                        <label>居住地</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="宝宝现在住在哪里?">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                       <div class="form-group">
+                                            <label>国籍</label><br>
+                                             <select name="country" class="form-control">
+                                                <option disabled="" selected="">- 国家 -</option>
+                                                <option value="China"> 中国 </option>
+                                                <option value="US"> 美国 </option>
+                                                <option value="Japan"> 日本 </option>
+                                                <option value="Germany"> 德国 </option>
+                                                <option value="France"> 法国 </option>
+                                                <option value="England"> 英国 </option>
+                                                <option value="Australia"> 澳大利亚 </option>
+                                                <option value="Malayia"> 马来西亚 </option>
+                                                <option value="Sinapore"> 新加坡 </option>
+                                                <option value="Innodonicia"> 印度尼西亚 </option>
+                                                <option value="Thailand"> 泰国 </option>
+                                                <option value="Russia"> 俄罗斯 </option>
+                                                <option value="...">...</option>
+                                            </select>
+                                          </div>
+                                  </div>
+                                  <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label>家庭成员数量</label>
+                                          <select class="form-control">
+                                            <option disabled="" selected="">- 头数 -</option>
+                                            <option>1 </option>
+                                            <option>2  </option>
+                                            <option>3 </option>
+                                            <option>4 </option>
+                                            <option>5 </option>
+                                            <option>6+ </option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                          <label>年龄</label>
+                                          <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Rent price per day">
+                                              <span class="input-group-addon"></span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="type">
+                                <h4 class="info-text">性别? </h4>
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have a house.">
+                                                <input type="radio" name="type" value="House">
+                                                <div class="icon">
+                                                    <i class="fa fa-home"></i>
+                                                </div>
+                                                <h6>男生</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you have an appartment">
+                                                <input type="radio" name="type" value="Appartment">
+                                                <div class="icon">
+                                                    <i class="fa fa-building"></i>
+                                                </div>
+                                                <h6>女生</h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="facilities">
+                                <h4 class="info-text">告诉我们更多宝宝的信息吧. </h4>
+                                <div class="row">
+                                    <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label>宝宝平时喜欢看什么类型的书？</label>
+                                          <select class="form-control">
+                                            <option disabled="" selected="">- 类型 -</option>
+                                            <option>时尚</option>
+                                            <option>旅游 </option>
+                                            <option>烹饪</option>
+                                            <option>科学</option>
+                                            <option>不知道</option>
+                                            <option>不喜欢看书</option>
+                                          </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                      <div class="form-group">
+                                          <label>宝宝感情状况 ?</label>
+                                          <select class="form-control">
+                                            <option disabled="" selected="">- 回答 -</option>
+                                            <option>已婚</option>
+                                            <option>有伴侣 </option>
+                                            <option>单身 </option>
+                                          </select>
+                                      </div>
+                                     </div>
+                                     <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label>Does your place have wi-fi?</label>
+                                          <select class="form-control">
+                                            <option disabled="" selected="">- response -</option>
+                                            <option>Yes</option>
+                                            <option>No </option>
+                                          </select>
+                                       </div>
+                                      </div>
+                                      <div class="col-sm-5">
+                                       <div class="form-group">
+                                          <label>Is breakfast included?</label>
+                                          <select class="form-control">
+                                            <option disabled="" selected="">- response -</option>
+                                            <option>Yes</option>
+                                            <option>No </option>
+                                          </select>
+                                       </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="description">
+                                <div class="row">
+                                    <h4 class="info-text"> Drop us a small description. </h4>
+                                    <div class="col-sm-6 col-sm-offset-1">
+                                         <div class="form-group">
+                                            <label>Place description</label>
+                                            <textarea class="form-control" placeholder="" rows="9">
+
+                                            </textarea>
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                         <div class="form-group">
+                                            <label>Example</label>
+                                            <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wizard-footer">
+                            	<div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd btn-sm' name='next' value='Next' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Finish' />
+
+                                </div>
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                </div>
+                                <div class="clearfix"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> <!-- wizard container -->
+        </div>
+        </div> <!-- row -->
+    </div> <!--  big container -->
+                    
+                </div>
+                <div class="visible-xs-block visible-sm-block b-hr"></div>
+                #include("/module/userbase.vm")
+            </div>
+        </div>
+    </div>
+</div>
+<!--   Core JS Files   -->
+	
+	
+	<script src="/user/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<!--  Plugin for the Wizard -->
+	<script src="/user/js/gsdk-bootstrap-wizard.js"></script>
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="/user/js/jquery.validate.min.js"></script>
+</html>

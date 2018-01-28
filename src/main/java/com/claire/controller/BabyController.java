@@ -4,11 +4,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.commons.collections.functors.ForClosure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.claire.domain.Article;
 import com.claire.domain.User;
@@ -35,6 +38,10 @@ public class BabyController {
         return "babyInfo";
     }
    
+    @RequestMapping("/babyinfo")
+    public String userinfo(HttpServletRequest request){
+        return  "/user/babyinfo";
+    }
     
     
 
