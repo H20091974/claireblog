@@ -32,7 +32,7 @@
                                         ${article.title}
                                     </a>
                                     <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
-                                        <a href="/user/editor/${article.id}" class="f-more">修改</a> | <a href="/user/article/delete/${article.id}" class="f-more">删除</a>
+                                        <a href="/user/article/editor/${article.id}" class="f-more">修改</a> | <a href="/user/article/delete/${article.id}" class="f-more">删除</a>
                                     </div>
                                     <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
                                         By <a href="#" class="f-more">Stephen Brock</a> In <a href="#" class="f-more">Lifestyle</a>, <a href="#" class="f-more">Photography</a> ${article.postDate}

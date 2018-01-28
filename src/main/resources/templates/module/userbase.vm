@@ -22,7 +22,7 @@
                                         <a class="f-categories-filter_name" href="/user/articles"><i class="fa fa-plus"></i>我的文章</a>
                                     </li>
                                     <li>
-                                        <a class="f-categories-filter_name" href="/user/publish"><i class="fa fa-plus"></i>发布文章</a>
+                                        <a class="f-categories-filter_name" href="/user/article/publish"><i class="fa fa-plus"></i>发布文章</a>
                                     </li>
                                     <li>
                                         <a class="f-categories-filter_name" href="/babyinfo"><i class="fa fa-plus"></i>我的宝宝</a>
