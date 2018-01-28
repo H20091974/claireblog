@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zhongnanhuang209074 on 2018/1/27.
@@ -38,13 +39,13 @@ public class UserArticleManagerController {
         return  "/user/articles";
     }
 
-    @RequestMapping("/publish")
+    @RequestMapping("/article/publish")
     public String publish(HttpServletRequest request){
         return  "/user/publish";
     }
 
 
-    @RequestMapping("/editor/{id}")
+    @RequestMapping("/article/editor/{id}")
     public String editor(Model model,@PathVariable int id){
         Article article = articleService.findArticleById(id);
         model.addAttribute("article",article);
@@ -57,10 +58,6 @@ public class UserArticleManagerController {
     @ResponseBody
     public String article_save(HttpServletRequest request){
         try {
-
-            String rootPath = request.getSession().getServletContext()
-                    .getRealPath("/");
-            System.out.println(rootPath);
 
             MultipartHttpServletRequest params = ((MultipartHttpServletRequest) request);
             MultipartFile file = params.getFile("headFig");
@@ -101,6 +98,26 @@ public class UserArticleManagerController {
             return "insert article error.";
         }
         return "upload successful";
+    }
+
+    @RequestMapping("/images/publish")
+    public String images_publish(Model model){
+        return "/user/images_publish";
+    }
+
+
+    @RequestMapping("/images/save")
+    @ResponseBody
+    public String images_save(HttpServletRequest request){
+
+        MultipartHttpServletRequest params = ((MultipartHttpServletRequest) request);
+        System.out.println("---------------------------------------");
+        Map<String,MultipartFile> fileMap = params.getFileMap();
+        for (Map.Entry<String,MultipartFile> node : fileMap.entrySet()){
+            System.out.println(node.getKey() + "-->" + node.getValue().getOriginalFilename());
+        }
+
+        return "/user/images_publish";
     }
 
 }
