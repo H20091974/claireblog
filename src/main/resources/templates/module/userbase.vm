@@ -13,23 +13,24 @@
                                 <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">我的窝</h4>
                                 <ul>
                                     <li>
-                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i>我的信息</a>
+                                        <a class="f-categories-filter_name" href="/user/userinfo"><i class="fa fa-plus"></i>我的信息</a>
                                     </li>
                                     <li>
                                         <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i>上传头像</a>
                                     </li>
                                     <li>
-                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i>我的文章</a>
+                                        <a class="f-categories-filter_name" href="/user/articles"><i class="fa fa-plus"></i>我的文章</a>
                                     </li>
                                     <li>
-                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i>我的宝宝</a>
+                                        <a class="f-categories-filter_name" href="/user/publish"><i class="fa fa-plus"></i>发布文章</a>
                                     </li>
                                     <li>
-                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i>宝宝的相册</a>
+                                        <a class="f-categories-filter_name" href="/babyinfo"><i class="fa fa-plus"></i>我的宝宝</a>
                                     </li>
                                     <li>
-                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Web Design</a>
+                                        <a class="f-categories-filter_name" href="/user/images/publish"><i class="fa fa-plus"></i>发布吱吱</a>
                                     </li>
+                                    
                                     <li>
                                         <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Sport</a>
                                     </li>

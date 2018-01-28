@@ -25,7 +25,7 @@
 				<div class="content-item">
 					<h3 class="title-item" >
 						
-					<a href="single.html" style="color:#333">大王</a></h3>
+					<a href="/baby" style="color:#333">大王</a></h3>
 					<div class="time"> Claire</div>
 					<p class="info">大王是最帅的宝宝，擅长做蛋炒饭。</p>
 					
@@ -33,7 +33,7 @@
 				<div class="bottom-item">
 					<a href="#" class="btn btn-like"><i class="fa fa-heart-o"></i></a>
 					<a href="#" class="btn btn-comment"><i class="fa fa-comment-o"></i></a>
-					<a href="single.html" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
+					<a href="/baby" class="btn btn-more"><i class="fa fa-long-arrow-right "></i></a>
 				</div>
 			</div>
 			<div class="item">

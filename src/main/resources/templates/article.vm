@@ -16,7 +16,7 @@
 				</ul>
 			</nav>
 			<div class="page-title">
-				<img src="${userprofile}" alt="Free HTML5 by FreeHTMl5.co">
+				<img src="${userprofile}">
 				<span>${article.postDate}</span>
 				<h2>${article.title}</h2>
 			</div>

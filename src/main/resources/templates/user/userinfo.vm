@@ -30,17 +30,17 @@
 
                     	<div class="wizard-header">
                         	<h3>
-                        	   <b>BUILD</b> YOUR PROFILE <br>
-                        	   <small>This information will let us know more about you.</small>
+                        	   <b>我的</b> 信息 <br>
+                        	   <small>我的信息.</small>
                         	</h3>
                     	</div>
 
 						<div class="wizard-navigation">
 							<ul>
-	                            <li><a href="#about" data-toggle="tab">About</a></li>
-	                            <li><a href="#account" data-toggle="tab">Account</a></li>
-	                            <li><a href="#address" data-toggle="tab">Address</a></li>
-	                            <li><a href="#description" data-toggle="tab">Description</a></li>
+	                            <li><a href="#about" data-toggle="tab">关于我</a></li>
+	                            <li><a href="#account" data-toggle="tab">性别</a></li>
+	                            <li><a href="#address" data-toggle="tab">联系地址</a></li>
+	                            <li><a href="#description" data-toggle="tab">自我介绍</a></li>
 	                        </ul>
 
 						</div>
@@ -48,36 +48,35 @@
                         <div class="tab-content">
                             <div class="tab-pane" id="about">
                               <div class="row">
-                                  <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
+                                  <h4 class="info-text"> 基础信息</h4>
                                   <div class="col-sm-4 col-sm-offset-1">
                                      <div class="picture-container">
                                           <div class="picture">
-                                              <img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
                                               <input type="file" id="wizard-picture">
                                           </div>
-                                          <h6>Choose Picture</h6>
+                                          <h6>上传头像</h6>
                                       </div>
                                   </div>
                                   <div class="col-sm-6">
                                       <div class="form-group">
-                                        <label>First Name <small>(required)</small></label>
+                                        <label>姓 <small>(*)</small></label>
                                         <input name="firstname" type="text" class="form-control" placeholder="Andrew...">
                                       </div>
                                       <div class="form-group">
-                                        <label>Last Name <small>(required)</small></label>
+                                        <label>名 <small>(*)</small></label>
                                         <input name="lastname" type="text" class="form-control" placeholder="Smith...">
                                       </div>
                                   </div>
                                   <div class="col-sm-10 col-sm-offset-1">
                                       <div class="form-group">
-                                          <label>Email <small>(required)</small></label>
+                                          <label>邮箱 <small>(*)</small></label>
                                           <input name="email" type="email" class="form-control" placeholder="andrew@creative-tim.com">
                                       </div>
                                   </div>
                               </div>
                             </div>
                             <div class="tab-pane" id="account">
-                                <h4 class="info-text"> What are you doing? (checkboxes) </h4>
+                                <h4 class="info-text"> 性别 </h4>
                                 <div class="row">
 
                                     <div class="col-sm-10 col-sm-offset-1">
@@ -87,7 +86,7 @@
                                                 <div class="icon">
                                                     <i class="fa fa-pencil"></i>
                                                 </div>
-                                                <h6>Design</h6>
+                                                <h6>男生</h6>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -96,7 +95,7 @@
                                                 <div class="icon">
                                                     <i class="fa fa-terminal"></i>
                                                 </div>
-                                                <h6>Code</h6>
+                                                <h6>女生</h6>
                                             </div>
 
                                         </div>
@@ -106,7 +105,7 @@
                                                 <div class="icon">
                                                     <i class="fa fa-laptop"></i>
                                                 </div>
-                                                <h6>Develop</h6>
+                                                <h6>保密</h6>
                                             </div>
 
                                         </div>
@@ -117,38 +116,43 @@
                             <div class="tab-pane" id="address">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h4 class="info-text"> Are you living in a nice area? </h4>
+                                        <h4 class="info-text"> 联系地址 </h4>
                                     </div>
                                     <div class="col-sm-7 col-sm-offset-1">
                                          <div class="form-group">
-                                            <label>Street Name</label>
+                                            <label>地区</label>
                                             <input type="text" class="form-control" placeholder="5h Avenue">
                                           </div>
                                     </div>
                                     <div class="col-sm-3">
                                          <div class="form-group">
-                                            <label>Street Number</label>
+                                            <label>街道名</label>
                                             <input type="text" class="form-control" placeholder="242">
                                           </div>
                                     </div>
                                     <div class="col-sm-5 col-sm-offset-1">
                                          <div class="form-group">
-                                            <label>City</label>
+                                            <label>城市</label>
                                             <input type="text" class="form-control" placeholder="New York...">
                                           </div>
                                     </div>
                                     <div class="col-sm-5">
                                          <div class="form-group">
-                                            <label>Country</label><br>
+                                            <label>国家</label><br>
                                              <select name="country" class="form-control">
-                                                <option value="Afghanistan"> Afghanistan </option>
-                                                <option value="Albania"> Albania </option>
-                                                <option value="Algeria"> Algeria </option>
-                                                <option value="American Samoa"> American Samoa </option>
-                                                <option value="Andorra"> Andorra </option>
-                                                <option value="Angola"> Angola </option>
-                                                <option value="Anguilla"> Anguilla </option>
-                                                <option value="Antarctica"> Antarctica </option>
+                                                <option disabled="" selected="">- 国家 -</option>
+                                                <option value="China"> 中国 </option>
+                                                <option value="US"> 美国 </option>
+                                                <option value="Japan"> 日本 </option>
+                                                <option value="Germany"> 德国 </option>
+                                                <option value="France"> 法国 </option>
+                                                <option value="England"> 英国 </option>
+                                                <option value="Australia"> 澳大利亚 </option>
+                                                <option value="Malayia"> 马来西亚 </option>
+                                                <option value="Sinapore"> 新加坡 </option>
+                                                <option value="Innodonicia"> 印度尼西亚 </option>
+                                                <option value="Thailand"> 泰国 </option>
+                                                <option value="Russia"> 俄罗斯 </option>
                                                 <option value="...">...</option>
                                             </select>
                                           </div>
@@ -157,10 +161,10 @@
                             </div>
                             <div class="tab-pane" id="description">
                                 <div class="row">
-                                    <h4 class="info-text"> Drop us a small description. </h4>
+                                    <h4 class="info-text"> 请用文字介绍你自己吧。 </h4>
                                     <div class="col-sm-6 col-sm-offset-1">
                                          <div class="form-group">
-                                            <label>Place description</label>
+                                            <label>自我介绍</label>
                                             <textarea class="form-control" placeholder="" rows="9">
 
                                             </textarea>
@@ -168,7 +172,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                          <div class="form-group">
-                                            <label>Example</label>
+                                            <label>例子</label>
                                             <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
                                           </div>
                                     </div>
@@ -177,13 +181,13 @@
                         </div>
                         <div class="wizard-footer height-wizard">
                             <div class="pull-right">
-                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
+                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='下一页' />
+                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='完成' />
 
                             </div>
 
                             <div class="pull-left">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='上一页' />
                             </div>
                             <div class="clearfix"></div>
                         </div>
