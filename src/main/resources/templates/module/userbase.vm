@@ -1,0 +1,135 @@
+<div class="col-md-3 col-md-pull-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="b-form-row b-input-search">
+                                <input class="form-control" type="text" placeholder="Enter your keywords"/>
+                                <span class="b-btn b-btn-search f-btn-search fa fa-search fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row b-col-default-indent">
+                        <div class="col-md-12">
+                            <div class="b-categories-filter">
+                                <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">我的窝</h4>
+                                <ul>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="/user/userinfo"><i class="fa fa-plus"></i>我的信息</a>
+                                    </li>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i>上传头像</a>
+                                    </li>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="/user/articles"><i class="fa fa-plus"></i>我的文章</a>
+                                    </li>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="/user/publish"><i class="fa fa-plus"></i>发布文章</a>
+                                    </li>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="/babyinfo"><i class="fa fa-plus"></i>我的宝宝</a>
+                                    </li>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="/user/images/publish"><i class="fa fa-plus"></i>发布吱吱</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Sport</a>
+                                    </li>
+                                    <li>
+                                        <a class="f-categories-filter_name" href="#"><i class="fa fa-plus"></i> Fashion</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h4 class="f-primary-b b-h4-special  f-h4-special--gray f-h4-special">popular postes</h4>
+
+                            <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+                                <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
+                                    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+                                        <div class="b-blog-short-post__item_img">
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_1.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="b-remaining">
+                                            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                                                <a href="#">Phasellus id mattis dolorunc et erat hendrerit, tincidunt</a>
+                                            </div>
+                                            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                                                10, January, 2014
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+                                        <div class="b-blog-short-post__item_img">
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_2.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="b-remaining">
+                                            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                                                <a href="#">Vel eleifend id ullamcorper eu velit</a>
+                                            </div>
+                                            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                                                14, January, 2014
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+                                        <div class="b-blog-short-post__item_img">
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_2.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="b-remaining">
+                                            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                                                <a href="#">Lorem ipsum dolor sit amet purus vitae magna rhoncus</a>
+                                            </div>
+                                            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                                                10, January, 2014
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
+                                        <div class="b-blog-short-post__item_img">
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_3.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="b-remaining">
+                                            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                                                <a href="#">Fusce vitae dui sit amet lacus rutrum convallis</a>
+                                            </div>
+                                            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                                                10, January, 2014
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b @@hidden">
+                                        <div class="b-blog-short-post__item_img">
+                                            <a href="#"><img data-retina src="/user/images/gallery/sm/gallery_1.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="b-remaining">
+                                            <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
+                                                <a href="#">Fusce vitae dui sit amet lacus rutrum convallis</a>
+                                            </div>
+                                            <div class="b-blog-short-post__item_date f-blog-short-post__item_date f-primary-it">
+                                                10, January, 2014
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h4 class="f-primary-b b-h4-special f-h4-special--gray f-h4-special">tags cloud</h4>
+                            <div>
+                                <a class="f-tag b-tag" href="#">Dress</a>
+                                <a class="f-tag b-tag" href="#">Mini</a>
+                                <a class="f-tag b-tag" href="#">Skate animal</a>
+                                <a class="f-tag b-tag" href="#">Lorem ipsum</a>
+                                <a class="f-tag b-tag" href="#">literature</a>
+                                <a class="f-tag b-tag" href="#">Baroque</a>
+                                <a class="f-tag b-tag" href="#">Dress</a>
+                                <a class="f-tag b-tag" href="#">Mini</a>
+                                <a class="f-tag b-tag" href="#">Skate animal</a>
+                                <a class="f-tag b-tag" href="#">Lorem ipsum</a>
+                                <a class="f-tag b-tag" href="#">literature</a>
+                                <a class="f-tag b-tag" href="#">Baroque</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>

@@ -40,6 +40,15 @@ public class UserArticleManagerController {
     }
 
     @RequestMapping("/article/publish")
+
+    @RequestMapping("/userinfo")
+    public String userinfo(HttpServletRequest request){
+        return  "/user/userinfo";
+    }
+    
+    
+    
+    @RequestMapping("/publish")
     public String publish(HttpServletRequest request){
         return  "/user/publish";
     }
