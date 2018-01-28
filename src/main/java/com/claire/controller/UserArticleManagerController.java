@@ -5,7 +5,10 @@ import com.claire.service.ArticleService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
@@ -14,6 +17,7 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by zhongnanhuang209074 on 2018/1/27.
@@ -26,27 +30,47 @@ public class UserArticleManagerController {
     private ArticleService articleService;
 
     @RequestMapping("/articles")
-    public String publish(HttpServletRequest request){
+    public String articles(Model model){
+
+        List<Article> articleList = articleService.findAllArticles();
+        model.addAttribute("articles",articleList);
+
         return  "/user/articles";
     }
 
-
-    @RequestMapping("/editor/id")
-    public String editor(HttpServletRequest request){
-        return  "article_editor";
+    @RequestMapping("/publish")
+    public String publish(HttpServletRequest request){
+        return  "/user/publish";
     }
 
 
-    @RequestMapping("/save")
-    public String save(HttpServletRequest request){
+    @RequestMapping("/editor/{id}")
+    public String editor(Model model,@PathVariable int id){
+        Article article = articleService.findArticleById(id);
+        model.addAttribute("article",article);
+        System.out.println(article);
+        return  "/user/editor";
+    }
+
+
+    @RequestMapping("/article/save")
+    @ResponseBody
+    public String article_save(HttpServletRequest request){
         try {
+
+            String rootPath = request.getSession().getServletContext()
+                    .getRealPath("/");
+            System.out.println(rootPath);
+
             MultipartHttpServletRequest params = ((MultipartHttpServletRequest) request);
             MultipartFile file = params.getFile("headFig");
             String title = params.getParameter("title");
             String tagsinput = params.getParameter("tagsinput");
             String content = params.getParameter("content");
 
-            String headFigPath = "log/" + file.getOriginalFilename();
+            System.out.println(params.getParameter("id"));
+
+            String headFigPath = "image\\" + file.getOriginalFilename();
 
             if (StringUtils.isBlank(title) || StringUtils.isBlank(content)) {
                 return "title or content is empty.";
@@ -56,7 +80,7 @@ public class UserArticleManagerController {
                 try {
                     byte[] bytes = file.getBytes();
                     stream = new BufferedOutputStream(new FileOutputStream(
-                            new File(headFigPath)));
+                            new File("D:\\"+headFigPath)));
                     stream.write(bytes);
                     stream.close();
                 } catch (Exception e) {
