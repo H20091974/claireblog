@@ -59,6 +59,8 @@ public class UserArticleManagerController {
         System.out.println(article);
         return  "/user/editor";
     }
+    
+    
 
 
     @RequestMapping("/article/save")

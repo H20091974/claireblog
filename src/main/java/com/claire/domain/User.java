@@ -59,4 +59,8 @@ public class User {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	public String toString(){
+		return getNickname() + "," + getPassword();
+	}
 }
