@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	#include("module/base.vm")
+	#parse("module/base.vm")
 	<!-- Main Stylesheet -->
        
 		

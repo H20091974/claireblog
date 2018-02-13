@@ -1,5 +1,5 @@
 server:
-    port: 8081
+    port: 8083
     max-http-header-size: 8192
     compression:
         min-response-size: 512
@@ -39,7 +39,7 @@ spring:
 #        type: com.zaxxer.hikari.HikariDataSource
         username: root
         password: root
-        url: jdbc:mysql://59.110.243.93:3306/claire7?useUnicode:true&amp;characterEncoding:UTF-8
+        url: jdbc:mysql://localhost:3306/claire7?useUnicode:true&amp;characterEncoding:UTF-8
         driverClassName: com.mysql.jdbc.Driver
         schema: classpath:import.sql
         data: classpath:data.sql

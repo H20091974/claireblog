@@ -117,10 +117,10 @@
                                 </div>
                                 <div class="error"></div>
                                 <div class="form loginBox">
-                                    <form method="post" action="/login" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                    <form method="post" accept-charset="UTF-8" id="loginform">
+                                    <input id="username" class="form-control" type="text" placeholder="Username" name="username" >
                                     <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    <input class="btn btn-default btn-login" type="submit" value="Login" onclick="login_validate()">
                                     </form>
                                 </div>
                              </div>
@@ -216,15 +216,36 @@
 		 function redirect(path){
 			 window.location.replace(path);
 		 }
+		 
+		 function login_validate () {
+		        var form = new FormData(document.getElementById("loginform"));
+		       
+		        $.ajax({
+		            url:"/login",
+		            type:"post",
+		            data:form,
+		            processData:false,
+		            contentType:false,
+		            async:false,
+		            success:function(data){
+		                alert(data);
+		                redirect('/')
+		            },
+		            error:function(e){
+		                alert(e);
+		            }
+		        });
+		    }
 			
 		</script>
+		
 		<script type="text/javascript">
 			$(function(){
 				/* ========================================================================= */
 				/*	Contact Form
 				/* ========================================================================= */
 				
-				$('#contact-form').validate({
+				$('#contact-forms').validate({
 					rules: {
 						name: {
 							required: true,
