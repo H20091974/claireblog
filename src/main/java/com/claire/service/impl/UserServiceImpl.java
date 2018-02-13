@@ -24,4 +24,17 @@ public class UserServiceImpl implements UserService{
 		else	return false;
 	}
 
+	@Override
+	public boolean saveUser(String username, String password) {
+		return userMapper.saveUser(username, password);
+	}
+
+	@Override
+	public boolean updateUserProfile(String firstname,String lastname, String gender, String profile, String description, String email,
+			String region, String street, String city, String country) {
+		return userMapper.updateUserProfile(firstname,lastname, gender, profile, description, email, region, street, city, country);
+	}
+	
+	
+
 }

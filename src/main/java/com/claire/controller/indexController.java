@@ -53,6 +53,41 @@ public class indexController {
     	else return "fail";
     }
     
+    @RequestMapping(value="/register")
+    @ResponseBody
+    public String register(HttpServletRequest request, Model model){
+    	System.out.println("in heree.");
+    	String username = request.getParameter("username");
+    	String psw = request.getParameter("password");
+    	System.out.println(username + "------" + psw);
+    	boolean success = userService.saveUser(username,psw);
+    	
+    	if(success) return "success";
+    	else return "fail";
+    }  
+    
+    @RequestMapping(value="/updateUserProfile")
+    @ResponseBody
+    public String updateUserProfile(HttpServletRequest request, Model model){
+    	System.out.println("in updateUserProfile.");
+    	String firstname = request.getParameter("firstname");
+    	String lastname = request.getParameter("lastname");
+    	String gender = request.getParameter("gender");
+    	String profile = request.getParameter("profile");
+    	String email = request.getParameter("email");
+    	String region = request.getParameter("region");
+    	String street = request.getParameter("street");
+    	String city = request.getParameter("city");
+    	String country = request.getParameter("country");
+    	String description = request.getParameter("description");
+    	
+    	System.out.println(gender + "------" + lastname);
+    	boolean success = userService.updateUserProfile(firstname, lastname,gender,  profile,  description,  email,
+    			 region,  street,  city,  country);
+    	
+    	if(success) return "success";
+    	else return "fail";
+    }
     
     
 
