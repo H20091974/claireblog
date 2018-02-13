@@ -61,7 +61,7 @@ var Script = function () {
         $(".tagsinput").tagsInput();
 
         // Switch
-        $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
+        //$("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
 
     });
 
@@ -77,9 +77,9 @@ var Script = function () {
 
     //date picker
 
-    if (top.location != location) {
-        top.location.href = document.location.href ;
-    }
+    //if (top.location != location) {
+    //    top.location.href = document.location.href ;
+    //}
     $(function(){
         window.prettyPrint && prettyPrint();
         $('#dp1').datepicker({
@@ -184,7 +184,7 @@ var Script = function () {
     //);
 
     //Set the initial state of the picker label
-    $('#reportrange span').html(Date.today().add({ days: -29 }).toString('MMMM d, yyyy') + ' - ' + Date.today().toString('MMMM d, yyyy'));
+    //$('#reportrange span').html(Date.today().add({ days: -29 }).toString('MMMM d, yyyy') + ' - ' + Date.today().toString('MMMM d, yyyy'));
 
 
 }();

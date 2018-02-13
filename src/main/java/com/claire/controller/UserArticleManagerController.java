@@ -106,7 +106,7 @@ public class UserArticleManagerController {
         }catch (Exception e){
             return "insert article error.";
         }
-        return "upload successful";
+        return "success";
     }
 
     @RequestMapping("/images/publish")

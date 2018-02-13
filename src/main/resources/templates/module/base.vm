@@ -117,23 +117,26 @@
                                 </div>
                                 <div class="error"></div>
                                 <div class="form loginBox">
-                                    <form method="post" accept-charset="UTF-8" id="loginform">
+
+									<form method="post" accept-charset="UTF-8" id="loginform" target="loginiframe">
                                     <input id="username" class="form-control" type="text" placeholder="Username" name="username" >
                                     <input id="password" class="form-control" type="password" placeholder="Password" name="password">
                                     <input class="btn btn-default btn-login" type="submit" value="Login" onclick="login_validate()">
                                     </form>
+                                    <iframe name="loginiframe" style="display:none"></iframe>
                                 </div>
                              </div>
                         </div>
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
                              <div class="form">
-                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8" target="registerframe">
                                 <input id="email" class="form-control" type="text" placeholder="Email" name="email">
                                 <input id="password" class="form-control" type="password" placeholder="Password" name="password">
                                 <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
                                 <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
                                 </form>
+                                 <iframe name="registerframe" style="display:none"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -226,74 +229,16 @@
 		            data:form,
 		            processData:false,
 		            contentType:false,
-		            async:false,
+		            async:true,
 		            success:function(data){
-		                alert(data);
-		                redirect('/')
-		            },
-		            error:function(e){
-		                alert(e);
+						if(data == "success"){
+                            redirect("/")
+						}else{
+							alert(data);
+						}
 		            }
 		        });
 		    }
-			
-		</script>
-		
-		<script type="text/javascript">
-			$(function(){
-				/* ========================================================================= */
-				/*	Contact Form
-				/* ========================================================================= */
-				
-				$('#contact-forms').validate({
-					rules: {
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						message: {
-							required: true
-						}
-					},
-					messages: {
-						name: {
-							required: "come on, you have a name don't you?",
-							minlength: "your name must consist of at least 2 characters"
-						},
-						email: {
-							required: "no email, no message"
-						},
-						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
-						}
-					},
-					submitHandler: function(form) {
-						$(form).ajaxSubmit({
-							type:"POST",
-							data: $(form).serialize(),
-							url:"process.php",
-							success: function() {
-								$('#contact-form :input').attr('disabled', 'disabled');
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$(this).find(':input').attr('disabled', 'disabled');
-									$(this).find('label').css('cursor','default');
-									$('#success').fadeIn();
-								});
-							},
-							error: function() {
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$('#error').fadeIn();
-								});
-							}
-						});
-					}
-				});
-			});
 		</script>
     </body>
 </html>
