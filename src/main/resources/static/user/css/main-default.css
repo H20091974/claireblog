@@ -732,8 +732,7 @@ body .b-hidden {
   font-size: 0.92308em;
   line-height: 1.2;
   color: #fff; }
-  .f-btn-strong:hover {
-    color: #fff; }
+
 
 [class*='button-'] {
   -webkit-transition: all 0.5s ease;
@@ -742,7 +741,6 @@ body .b-hidden {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 
-  color: #fff;
   font-weight: 700;
   display: inline-block;
   text-align: center;
@@ -750,8 +748,9 @@ body .b-hidden {
   white-space: nowrap;
   text-shadow: 0 -1px 1px rgba(255, 255, 255, 0.2); }
   [class*='button-']:hover {
-    color: #fff;
-    background-color: #d05a25; }
+    /*color: #fff;*/
+    /*background-color: #d05a25; */
+  }
 
 [class*='button-xs'] {
   font-size: 1em;

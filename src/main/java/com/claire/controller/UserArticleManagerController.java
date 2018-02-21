@@ -109,6 +109,7 @@ public class UserArticleManagerController {
 
     @RequestMapping("/images/publish")
     public String images_publish(Model model){
+//        return "/uploadimage";
         return "/user/images_publish";
     }
 
