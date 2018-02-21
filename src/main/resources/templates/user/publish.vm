@@ -28,7 +28,7 @@
 
                     <div class="b-blog-listing__block">
                         <br><br><br>
-                        <form class="form-horizontal" enctype="multipart/form-data" id="article" method="post">
+                        <form class="form-horizontal" enctype="multipart/form-data" id="article" target="articlepublishiframe">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label"><h4>标题</h4></label>
 
@@ -71,6 +71,7 @@
 
                             </div>
                         </form>
+                        <iframe name="articlepublishiframe" style="display:none"></iframe>
 
                     </div>
 
@@ -207,12 +208,13 @@
             data:form,
             processData:false,
             contentType:false,
-            async:false,
+            async:true,
             success:function(data){
-                alert(data);
-            },
-            error:function(e){
-                alert("错误！！");
+                if(data == "success"){
+                    redirect("/article/id")
+                }else {
+                    alert(data);
+                }
             }
         });
     }

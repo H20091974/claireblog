@@ -59,6 +59,8 @@ public class UserArticleManagerController {
         System.out.println(article);
         return  "/user/editor";
     }
+    
+    
 
 
     @RequestMapping("/article/save")
@@ -104,7 +106,7 @@ public class UserArticleManagerController {
         }catch (Exception e){
             return "insert article error.";
         }
-        return "upload successful";
+        return "success";
     }
 
     @RequestMapping("/images/publish")
